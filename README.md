@@ -1,61 +1,27 @@
-Create a basic navigation application, as shown below. Some core functionalities have already been implemented, but the application is not complete. Application requirements are given below, and the finished application must pass all of the unit tests.
+Explorer:
 
+Description:
 
+You are tasked with building an Explorer component using React. The Explorer should mimic the functionality of file explorers like those found in VS Code or Windows Explorer. The Explorer component should consist of a tree structure with folders and files.
 
-The app has one component: the Navigation view. The list of locations to be displayed is already provided in the app.
+Your task is to implement a React component that represents the Explorer and allows users to navigate through folders and view files. Additionally, you should style the Explorer to make it visually appealing.
 
+Requirements:
 
-The app should implement the following functionalities:
+1. Use React to create a component called Explorer.
+2. The Explorer component should display a tree structure with folders and files.
+3. Users should be able to expand and collapse folders to view their contents.
+4. Clicking on a file should open it or trigger an action (such as displaying its contents).
+5. Ensure that the Explorer supports nested folders (folders within folders).
+6. Style the Explorer to make it visually appealing. You can use CSS or any other styling method of your choice.
+7. Provide basic functionality like creating, renaming, deleting folders and files (optional, but encouraged for enhanced user experience).
+8. Ensure smooth navigation and interaction within the Explorer component.
 
+Example:
 
-The locations should be initially displayed in their respective <li> tags in the same order in which they are provided.
-
-
-Each location can have one or two icon buttons, depending upon its position in the list:
-
-
-The first location should only have the Move Down icon button
-
-
-The last location should only have the Move Up icon button
-
-
-All the other Jocations should have both the Move Up and the Move Down buttons
-
-
-Clicking on the Move Down button should move the location down by one position in the list.
-Similarly, clicking the Move Up button should move the location up try one position in the list.
-
-
-When a location is moved either up or down, it should exchange its position with the location positioned just above (if moving up) or below (if moving down).
-
-
-
-
-PROBLEMS OUTPUT
-The list of locations is passed as props to the Navigation component
-The locations lists an array of strings, with each item representing a location in the list.
-
-
-The locations list is an array of strings, with each item representing a location in the list.
-
-Note: The utility function is last is provided to help with determining if the current location is the last item in the list. Also, the function getClasses is present in the template to aid in rendering. Please do not modify this function.
-
-The following data-testid/class attributes are required in the component for the tests to pass:
-
-The parent container of the location list <ul> should have the data-testid attribute 'location-list"
-
-Each location item in the list should have the data-testid
-
-attribute location-0', 'location-1', 'location-2, and so on.
-
-Each location name paragraph tag <p> should have the data-testid attribute "location"
-
-Each Move Up button should have the data-testid attribute up-button
-
-Each Move Down button should have the data-testid attribute 'down-button
-
-Please note that the component has the above data-testid attributes for test cases and certain classes and ids for rendering purposes. It is advised not to change them
-
-
-
+Here's how the Explorer component should behave:
+- Initially, the Explorer displays a root folder with its contents.
+- Users can expand or collapse folders by clicking on them.
+- Clicking on a file opens it or performs an action associated with it.
+- Users can perform basic file management actions like creating, renaming, or deleting folders and files (optional, but encouraged).
+- The Explorer provides a visually appealing and intuitive user interface for navigating through folders and viewing files.
