@@ -1,0 +1,36 @@
+.App {
+  text-align: center;
+  
+}
+
+.wrapper{
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  width: fit-content;
+  padding: 4px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.green{
+  background-color: green;
+}
+
+.yellow{
+  background-color: yellow;
+}
+
+.red{
+  background-color: red;
+}
+
+.light{
+  width: 35px;
+  height: 35px;
+  border-radius: 35px;
+  padding: 15px;
+  border: 1px solid black;
+  margin: 12px;
+}
